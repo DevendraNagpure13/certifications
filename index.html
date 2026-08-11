@@ -1,46 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Certifications</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 12px;
+            font-size: 17px;
+            color: #d1d5db;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .category {
+            margin-bottom: 45px;
+        }
+
+        .category h2 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .issuer {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 16px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-<h1>My Certifications</h1>
+<header>
+    <h1>My Certifications</h1>
+    <p>Professional Certifications & Technical Training</p>
+</header>
 
-<p>Professional certifications and technical training</p>
+<div class="container">
 
-<h2>Engineering & Simulation</h2>
+    <!-- FEA & Simulation -->
+    <section class="category">
 
-<ul>
-    <li>
-        <a href="YOUR_CERTIFICATE_LINK">
-            ANSYS Plasticity
-        </a>
-    </li>
+        <h2>FEA & Simulation</h2>
 
-    <li>
-        <a href="YOUR_CERTIFICATE_LINK">
-            Finite Element Analysis
-        </a>
-    </li>
-</ul>
+        <div class="certificates">
 
-<h2>Programming & Optimization</h2>
+            <div class="card">
+                <h3>ANSYS Plasticity</h3>
 
-<ul>
-    <li>
-        <a href="YOUR_CERTIFICATE_LINK">
-            Python
-        </a>
-    </li>
+                <div class="issuer">
+                    ANSYS Innovation Space
+                </div>
 
-    <li>
-        <a href="YOUR_CERTIFICATE_LINK">
-            Optimization
-        </a>
-    </li>
-</ul>
+                <div class="description">
+                    Training in plasticity and finite element analysis
+                    using ANSYS.
+                </div>
+
+                <a class="button"
+                   href="YOUR_CERTIFICATE_LINK"
+                   target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+
+            <div class="card">
+                <h3>Abaqus Simulation</h3>
+
+                <div class="issuer">
+                    Issuing Organization
+                </div>
+
+                <div class="description">
+                    Finite element modeling and nonlinear simulation.
+                </div>
+
+                <a class="button"
+                   href="YOUR_CERTIFICATE_LINK"
+                   target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Programming -->
+    <section class="category">
+
+        <h2>Programming & Computational Skills</h2>
+
+        <div class="certificates">
+
+            <div class="card">
+                <h3>Python</h3>
+
+                <div class="issuer">
+                    Issuing Organization
+                </div>
+
+                <div class="description">
+                    Scientific computing, numerical methods and
+                    data analysis using Python.
+                </div>
+
+                <a class="button"
+                   href="YOUR_CERTIFICATE_LINK"
+                   target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Optimization -->
+    <section class="category">
+
+        <h2>Optimization</h2>
+
+        <div class="certificates">
+
+            <div class="card">
+                <h3>Optimization Methods</h3>
+
+                <div class="issuer">
+                    Issuing Organization
+                </div>
+
+                <div class="description">
+                    Training in optimization and numerical methods.
+                </div>
+
+                <a class="button"
+                   href="YOUR_CERTIFICATE_LINK"
+                   target="_blank">
+                    View Certificate
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 | Certification Portfolio
+</footer>
 
 </body>
 </html>
