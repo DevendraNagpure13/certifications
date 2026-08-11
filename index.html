@@ -14,9 +14,9 @@
             .profile-photo {
         width: 140px;
         height: 140px;
-        border-radius: 50%;
+        border-radius: 20%;
         object-fit: cover;
-        border: 4px solid white;
+        border: 2px solid white;
         margin-bottom: 20px;
     }
 
@@ -134,19 +134,40 @@
 
 <header>
 
-    
-    <img src="photo.jpg"
-         alt="Devendra Nagpure"
-         class="profile-photo">
-    
-    <a href="YOUR_LINKEDIN_URL"
-       target="_blank"
-       class="linkedin-button">
-        LinkedIn Profile
-    </a>
+    <div class="profile-header">
 
-    <h1>My Certifications</h1>
-    <p>Professional Certifications & Technical Training</p>
+        <!-- Left: Profile Photo -->
+        <div class="profile-left">
+            <img src="photo.jpg"
+                 alt="Devendra Nagpure"
+                 class="profile-photo">
+        </div>
+    
+        <!-- Center: Name and Title -->
+        <div class="profile-center">
+
+            <h1>My Certifications</h1>
+
+          <p>Professional Certifications & Technical Training</p>
+
+        </div>
+
+<!-- Right: LinkedIn -->
+        <div class="profile-right">
+
+            <a href="YOUR_LINKEDIN_URL"
+               target="_blank"
+               class="linkedin-button">
+
+                LinkedIn
+
+            </a>
+
+        </div>
+
+    </div>
+
+    
 </header>
 
 <div class="container">
